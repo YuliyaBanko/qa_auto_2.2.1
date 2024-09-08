@@ -1,16 +1,16 @@
 function increaseBalance(x, y) {
-  x = x + y;
+  x += y;
   return x;
 }
 
 function decreaseBalance(x,y) {
-x = x - y;
+x -= y;
 return x;
 }
 // "y" was not defined
 
 function divideBalanceByAccounts(x, y) {
-  x = x / y;
+  x /= y;
   console.log("x");
   return x;
 }
@@ -18,7 +18,7 @@ function divideBalanceByAccounts(x, y) {
 // не очень понятна смысловая нагрузка выведения в консоль переменной х в качестве строки(?)
 
 function getRestAfterDivision(x, y) {
-  x = x % y;
+  x %= y;
   return x;
 }
 
