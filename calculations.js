@@ -1,10 +1,12 @@
 function increaseBalance(x, y) {
   x += y;
+  x++;
   return x;
 }
 
 function decreaseBalance(x,y) {
 x -= y;
+x--;
 return x;
 }
 // "y" was not defined
