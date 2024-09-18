@@ -32,3 +32,20 @@ function testingExpences(expectedResult,expencesArray) {
 expencesExamples.forEach((expencesEx, index) => {
     testingExpences(expectedResult[index], expencesEx.yearlyExpences)
 })
+
+function getMonth(expensesArray) {
+    const monthNames = [
+        "Jan", "Feb", "Marт", "Apr", "May", "June","Jul", "АAug", "Sep", "Oct", "Nov", "Dec"];
+    let lowExpenseMonths = [];
+    
+    expensesArray.forEach((expense, index) => {
+        if (expense <= 1000) {
+            lowExpenseMonths.push(monthNames[index]);
+        }
+    });
+    return lowExpenseMonths;
+}
+expencesExamples.forEach((expensesEx) => {
+    let months = getMonth(expensesEx.yearlyExpences);
+    console.log(months);
+});
